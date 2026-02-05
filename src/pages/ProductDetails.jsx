@@ -45,7 +45,8 @@ const ProductDetails = () => {
             description: product.description, 
             image: product.thumbnail, 
             price: product.price, 
-            category: product.category
+            category: product.category,
+            quantity: quantity
         }
         
         try {
@@ -67,6 +68,7 @@ const ProductDetails = () => {
                     description: product.description,
                     image: product.thumbnail,
                     price: product.price,
+                    quantity: quantity
                 }))
                 navigate("/cart")
             } else {
